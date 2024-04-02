@@ -1,0 +1,62 @@
+.space {
+  margin-bottom: 14rem;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10rem;
+  text-align: center;
+  padding-top: .8rem;
+  padding-bottom: 1rem;
+}
+
+.containerStyle {
+  border: 2px solid black;
+  border-radius: 10px;
+  margin-top: 2rem;
+  margin: 3rem 5rem;
+}
+
+.principal {
+  width: 100px;
+  height: 100px;
+  border: none;
+  border-radius: 50%;
+}
+
+.image1 {
+  background-color: #1a47ba;
+}
+
+.image2 {
+  background-color: #208dd8;
+}
+
+.image3 {
+  background-color: #7ee8e5;
+}
+
+.tryAgain {
+  width: 100px;
+  height: 50px;
+  border: none;
+  cursor: pointer;
+  background-color: #87CEFA;
+  border-radius: 10px;
+  padding: 0 20px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+@media (max-width: 823px) {
+  .principal {
+    width: 70px;
+    height: 70px;
+    border: none;
+    border-radius: 50%;
+    background-size: contain;
+    background-position: center;
+  }
+
+}

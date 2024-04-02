@@ -1,0 +1,47 @@
+.principal {
+  border: 2px solid black;
+  border-radius: 10px;
+  margin-top: 2rem;
+  margin: 3rem 5rem;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+
+.score {
+  border: 2px solid #90EE90;
+  margin: 10px;
+  padding: 0 6rem;
+  border-radius: 20px;
+  text-align: center;
+  background-color: #90EE90;
+}
+
+.sizeWord {
+  font-size: 25px;
+}
+
+.sizeNumber {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.liningUp {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+@media (max-width: 823px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .mobile {
+    display: flex;
+    justify-content: space-around;
+  }
+} 
