@@ -41,26 +41,6 @@ ref
     }
   }, [stateChange]);
 
-  const images = [
-    { id: 'rock', url: '/src/assets/punho.png' },
-    { id: 'paper', url: '/src/assets/palma-da-mao.png' },
-    { id: 'scissors', url: '/src/assets/tesouras.png' },
-  ];
-
-  const findMainPlayerImage = (mainPlayer) => {
-    const image = images.find((image) => image.id === mainPlayer);
-    return image ? image.url : null;
-  };
-
-  const mainPlayerUrl = findMainPlayerImage(mainPlayer);
-
-  const findMachinePlayerImage = (machinePlayer) => {
-    const image = images.find((image) => image.id === machinePlayer);
-    return image ? image.url : null;
-  };
-
-  const machinePlayerUrl = findMachinePlayerImage(machinePlayer);
-
   const containerRef = React.useRef(null); // Ref para o container do jogo
 
   React.useEffect(() => {
@@ -81,15 +61,13 @@ ref
       <div ref={containerRef} className={` ${styles.container} ${styles.containerStyle}`}>
         <div>
           <h2>Player</h2>
-          <img
-            className={`
+          <button className={`
           ${styles.principal}  
           ${mainPlayer === 'rock' ? styles.image1 : ''}
           ${mainPlayer === 'scissors' ? styles.image2 : ''}
           ${mainPlayer === 'paper' ? styles.image3 : ''}
-          `}
-            src={mainPlayerUrl}
-          />
+          `}>
+          </button>
         </div>
 
         <div>
@@ -99,15 +77,12 @@ ref
 
         <div>
           <h2>Machine</h2>
-          <img
-            className={`
+          <button className={`
           ${styles.principal}  
           ${machinePlayer === 'rock' ? styles.image1 : ''}
           ${machinePlayer === 'scissors' ? styles.image2 : ''}
           ${machinePlayer === 'paper' ? styles.image3 : ''}
-          `}
-            src={machinePlayerUrl}
-          />
+          `}></button>
         </div>
       </div>
     </div>
