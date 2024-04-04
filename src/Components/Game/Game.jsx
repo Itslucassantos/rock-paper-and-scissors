@@ -64,7 +64,6 @@ ref
   const containerRef = React.useRef(null); // Ref para o container do jogo
 
   React.useEffect(() => {
-    // Verifica se o componente deve ser rolado para a exibição
     if (!hideComponent && containerRef.current) {
       containerRef.current.scrollIntoView({ behavior: 'smooth' });
     }
