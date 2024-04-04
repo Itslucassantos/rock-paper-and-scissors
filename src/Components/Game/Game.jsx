@@ -42,9 +42,9 @@ ref
   }, [stateChange]);
 
   const images = [
-    { id: 'rock', url: '/src/Assets/punho.png' },
-    { id: 'paper', url: '/src/Assets/palma-da-mao.png' },
-    { id: 'scissors', url: '/src/Assets/tesouras.png' },
+    { id: 'rock', url: '/src/assets/punho.png' },
+    { id: 'paper', url: '/src/assets/palma-da-mao.png' },
+    { id: 'scissors', url: '/src/assets/tesouras.png' },
   ];
 
   const findMainPlayerImage = (mainPlayer) => {

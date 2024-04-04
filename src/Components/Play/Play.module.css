@@ -17,17 +17,17 @@
 }
 
 .image1 {
-  background-image: url('/src/Assets/punho.png');
+  background-image: url('/src/assets/punho.png');
   background-color: #1a47ba;
 }
 
 .image2 {
-  background-image: url('/src/Assets/tesouras.png');
+  background-image: url('/src/assets/tesouras.png');
   background-color: #208dd8;
 }
 
 .image3 {
-  background-image: url('/src/Assets/palma-da-mao.png');
+  background-image: url('/src/assets/palma-da-mao.png');
   background-color: #7ee8e5;
 }
 
