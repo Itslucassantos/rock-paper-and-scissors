@@ -14,11 +14,11 @@ const Header = ({ playerScore, machineScore }) => {
           <h2 className={styles.sizeWord}>score</h2>
           <div className={styles.liningUp}>
             <div>
-              <h3>Player</h3>
+              <h3 className={styles.scorePlayer}>Player</h3>
               <p className={styles.sizeNumber}>{playerScore}</p>
             </div>
             <div>
-              <h3>Machine</h3>
+              <h3 className={styles.scoreMachine}>Machine</h3>
               <p className={styles.sizeNumber}>{machineScore}</p>
             </div>
           </div>
